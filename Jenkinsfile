@@ -4,7 +4,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhubid') {
 
-        def customImage = docker.build("kasi123/alpine")
+        def customImage = docker.build("kasi123/sample-ngnix:v1")
 
         /* Push the container to the custom Registry */
         customImage.push()
